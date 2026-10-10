@@ -1,0 +1,102 @@
+
+/* Design tokens: light theme (default)  */
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --color-bg: #ffffff;
+  --color-bg-muted: #f9fafb;
+  --color-surface: #ffffff;
+  --color-header-bg: #0f172a;
+  --color-header-text: #ffffff;
+
+  /* Text */
+  --color-text: #333333;
+  --color-heading: #0f172a;
+  --color-text-muted: #555555;
+
+  /* Lines & depth */
+  --color-border: #e5e7eb;
+  --shadow-card: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  /* Accent: links, buttons */
+  --color-link: #0ea5e9;
+  --color-btn-bg: #0ea5e9;
+  --color-btn-bg-hover: #0284c7;
+  --color-btn-text: #ffffff;
+  --color-brand: #38bdf8;
+
+  /* Form controls */
+  --color-input-bg: #ffffff;
+  --color-input-border: #dddddd;
+  --color-focus: #007bff;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+}
+
+/*  Design tokens: dark theme  */
+/* Applied by assets/js/theme.js via <html data-theme="dark"> */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg: #0f172a;
+  --color-bg-muted: #0f172a;
+  --color-surface: #1e293b;
+  --color-header-bg: #020617;
+
+  --color-text: #e2e8f0;
+  --color-heading: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  --color-border: #334155;
+  --shadow-card: 0 3px 8px rgba(0, 0, 0, 0.45);
+
+  --color-link: #38bdf8;
+  --color-btn-bg: #0369a1;
+  --color-btn-bg-hover: #075985;
+
+  --color-input-bg: #1e293b;
+  --color-input-border: #334155;
+  --color-focus: #60a5fa;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Global elements  */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Smooth theme switching on the main surfaces */
+body,
+.blog-post,
+.article-card,
+.contact-card,
+aside,
+.category-sidebar,
+#blog-search {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

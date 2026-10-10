@@ -1,0 +1,113 @@
+/* 
+   layout.css
+   Site chrome shared by every page: header, navigation, search box,
+   theme toggle and footer.
+ */
+
+/* Header  */
+header {
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--color-brand);
+}
+
+/*  Navigation  */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-header-text);
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--color-brand);
+}
+
+/*  Search box  */
+.search-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+#blog-search {
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-input-bg);
+  border: 2px solid var(--color-input-border);
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#blog-search:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/*  Theme toggle  */
+/* The label swaps with CSS (driven by <html data-theme>) */
+.theme-toggle {
+  font-size: 14px;
+  color: var(--color-header-text);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.theme-toggle__label--to-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__label--to-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__label--to-light {
+  display: inline;
+}
+
+/*  Footer  */
+footer {
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/*  Responsive  */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

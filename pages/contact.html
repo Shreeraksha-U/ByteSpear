@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ByteSpear</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/pages/contact.css">
+    <script src="../assets/js/theme.js"></script>
+</head>
+<body class="contact-page">
+
+    <header>
+
+        <h1>ByteSpear</h1>
+
+
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="cybersecurity.html">Cyber Security</a></li>
+                <li><a href="cloud.html">Cloud</a></li>
+                <li><a href="ai-ml.html">AI &amp; ML</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li>
+                    <button type="button" class="theme-toggle" data-theme-toggle>
+                        <span class="theme-toggle__label--to-dark">Switch to Dark Mode</span>
+                        <span class="theme-toggle__label--to-light">Switch to Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have questions, feedback, or a story idea? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Left Column: Contact Form -->
+            <div class="contact-card">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="contact-form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required maxlength="50" pattern="^[a-zA-Z\s\-']+$" placeholder="Maki Zen">
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required maxlength="100" placeholder="makizen@mail.com">
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="reason">Reason for Contact</label>
+                        <select id="reason" name="reason" required>
+                            <option value="" disabled selected>Select a reason</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="pitch">Guest Post / Article Pitch</option>
+                            <option value="error">Report a Typo / Technical Issue</option>
+                            <option value="advertise">Advertising & Sponsorship</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required  maxlength="2000" placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right Column: Quick Info -->
+            <div class="contact-card contact-info">
+                <h2>Other Ways to Connect</h2>
+                
+                <div class="contact-info-item">
+                    <h3>Direct Email</h3>
+                    <p><a href="mailto:editor@bytespear.com">editor@bytespear.com</a></p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3>Social Media</h3>
+                    <p><a href="#">Twitter / X</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3>Response Time</h3>
+                    <p>We typically reply to all inquiries within 24 to 48 business hours.</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3>Submission Guidelines</h3>
+                    <p>If pitching a guest post, please include 2-3 links to your previous work and a short 150-word abstract.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

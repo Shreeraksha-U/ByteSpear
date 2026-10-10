@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Programming | TechSphere</title>
+    <title>Programming | ByteSpear</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/programming.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/pages/category.css">
+    <script src="../assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -16,30 +18,36 @@
     <!-- HEADER -->
     <header>
 
-    <h1>TechSphere</h1>
-    <div class="search-container">
-    <input type="text" id="blog-search" placeholder="Search blog posts..." onkeyup="filterPosts()">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/programming.html">Programming</a></li>
-            <li><a href="/cybersecurity.html">Cyber Security</a></li>
-            <li><a href="/cloud.html">Cloud</a></li>
-            <li><a href="/ai-ml.html">AI & ML</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <button id="theme-toggle">Switch to Dark Mode</button>
+        <h1>ByteSpear</h1>
 
-        </ul>
-    </nav>
+        <div class="search-container">
+            <input type="text" id="blog-search" placeholder="Search blog posts..." aria-label="Search blog posts">
+        </div>
 
-</header>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="programming.html" aria-current="page">Programming</a></li>
+                <li><a href="cybersecurity.html">Cyber Security</a></li>
+                <li><a href="cloud.html">Cloud</a></li>
+                <li><a href="ai-ml.html">AI &amp; ML</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button type="button" class="theme-toggle" data-theme-toggle>
+                        <span class="theme-toggle__label--to-dark">Switch to Dark Mode</span>
+                        <span class="theme-toggle__label--to-light">Switch to Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
 
 
     <!-- PROGRAMMING CONTENT -->
     <main>
 
-        <section class="programming-hero">
+        <section class="category-hero">
             <h1>Programming</h1>
 
             <p>
@@ -49,9 +57,9 @@
         </section>
 
 
-        <section class="programming-section">
+        <section class="category-section">
 
-            <div class="programming-main">
+            <div class="category-main">
 
                 <h2>Programming Tutorials</h2>
 
@@ -149,7 +157,7 @@
             </div>
 
 
-            <aside class="programming-sidebar">
+            <aside class="category-sidebar">
 
                 <h3>Programming Topics</h3>
 
@@ -166,6 +174,6 @@
         </section>
 
     </main>
- <script src="js/switch_theme.js"></script>
+    <script src="../assets/js/search.js" defer></script>
 </body>
 </html>

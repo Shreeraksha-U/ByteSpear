@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteSphere - IT Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-
-    
+    <title>ByteSpear - IT Blog</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <script src="assets/js/theme.js"></script>
 </head>
 
 <body>
 
 <header>
+        <h1>ByteSpear</h1>
 
-    <h1>TechSphere</h1>
-<div class="search-container">
-  <input type="text" id="blog-search" placeholder="Search blog posts..." onkeyup="filterPosts()">
-</div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="/programming.html">Programming</a></li>
-            <li><a href="/cybersecurity.html">Cyber Security</a></li>
-            <li><a href="/cloud.html">Cloud</a></li>
-            <li><a href="/ai-ml.html">AI & ML</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <button id="theme-toggle">Switch to Dark Mode</button>
+        <div class="search-container">
+            <input type="text" id="blog-search" placeholder="Search blog posts..." aria-label="Search blog posts">
+        </div>
 
-        </ul>
-    </nav>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="pages/programming.html">Programming</a></li>
+                <li><a href="pages/cybersecurity.html">Cyber Security</a></li>
+                <li><a href="pages/cloud.html">Cloud</a></li>
+                <li><a href="pages/ai-ml.html">AI &amp; ML</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li>
+                    <button type="button" class="theme-toggle" data-theme-toggle>
+                        <span class="theme-toggle__label--to-dark">Switch to Dark Mode</span>
+                        <span class="theme-toggle__label--to-light">Switch to Light Mode</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
 
-</header>
+    </header>
 
 <section class="hero">
-    <h2>Welcome to TechSphere</h2>
+    <h2>Welcome to ByteSpear</h2>
 
     <p>
         Your daily source for programming tutorials, AI, cloud computing,
@@ -142,12 +147,12 @@
 <footer>
 
     <p>
-        © 2026 ByteSphere | All Rights Reserved
-        <br> <a href="/contact.html">Contact Us</a>
+        © 2026 ByteSpear | All Rights Reserved
+        <br> <a href="pages/contact.html">Contact Us</a>
     </p>
 
 </footer>
-    <script src="/js/switch_theme.js"></script> 
+    <script src="assets/js/search.js" defer></script>
 
 </body>
-      </html>
+</html>
