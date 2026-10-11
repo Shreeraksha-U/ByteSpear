@@ -99,7 +99,7 @@ footer {
   margin-top: 40px;
 }
 
-/*  Responsive  */
+/* Responsive Layout*/
 @media (max-width: 768px) {
   header {
     flex-direction: column;
