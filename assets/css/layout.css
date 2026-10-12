@@ -49,15 +49,24 @@ nav a[aria-current="page"] {
   font-size: 16px;
   color: var(--color-text);
   background: var(--color-input-bg);
+  padding: 2px 8px;
   border: 2px solid var(--color-input-border);
-  border-radius: 25px;
+  border-radius: 8px;
   outline: none;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #blog-search:focus {
   border-color: var(--color-focus);
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+#blog-search:hover {
+  padding: 6px 14px;
+  color: gray;
+  border: 2px solid cornflowerblue;
+  
 }
 
 /*  Theme toggle  */
